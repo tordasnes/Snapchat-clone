@@ -24,6 +24,7 @@
     [testObject save];
     
     [self performSegueWithIdentifier:@"showLogin" sender:self];
+    // Such a cool feature!
     
 }
 
