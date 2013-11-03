@@ -20,6 +20,7 @@
 		421B462C1826C8D50082B789 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421B462A1826C8D50082B789 /* InfoPlist.strings */; };
 		421B462E1826C8D50082B789 /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421B462D1826C8D50082B789 /* RibbitTests.m */; };
 		421B46381826C9070082B789 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421B46371826C9070082B789 /* MainStoryboard.storyboard */; };
+		421B463B1826FD750082B789 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421B463A1826FD750082B789 /* InboxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,9 @@
 		421B46291826C8D50082B789 /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		421B462B1826C8D50082B789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		421B462D1826C8D50082B789 /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
-		421B46371826C9070082B789 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		421B46371826C9070082B789 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		421B46391826FD750082B789 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		421B463A1826FD750082B789 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,6 @@
 		421B45FC1826C8D50082B789 = {
 			isa = PBXGroup;
 			children = (
-				421B46371826C9070082B789 /* MainStoryboard.storyboard */,
 				421B460E1826C8D50082B789 /* Ribbit */,
 				421B46271826C8D50082B789 /* RibbitTests */,
 				421B46071826C8D50082B789 /* Frameworks */,
@@ -112,6 +114,9 @@
 			children = (
 				421B46171826C8D50082B789 /* AppDelegate.h */,
 				421B46181826C8D50082B789 /* AppDelegate.m */,
+				421B46371826C9070082B789 /* MainStoryboard.storyboard */,
+				421B46391826FD750082B789 /* InboxViewController.h */,
+				421B463A1826FD750082B789 /* InboxViewController.m */,
 				421B461A1826C8D50082B789 /* Images.xcassets */,
 				421B460F1826C8D50082B789 /* Supporting Files */,
 			);
@@ -245,6 +250,7 @@
 			files = (
 				421B46191826C8D50082B789 /* AppDelegate.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
+				421B463B1826FD750082B789 /* InboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
