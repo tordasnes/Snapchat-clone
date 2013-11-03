@@ -1,4 +1,4 @@
-SnapClone-TeamTreehouse
+Snapchat clone - Course at Treehouse
 =======================
 
 Self-Destructing Message iPhone App 
