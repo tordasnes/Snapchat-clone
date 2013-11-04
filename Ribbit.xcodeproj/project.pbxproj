@@ -34,6 +34,7 @@
 		428B9F091827E416003D19F0 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F081827E416003D19F0 /* EditFriendsViewController.m */; };
 		428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0B1827F042003D19F0 /* FriendsViewController.m */; };
 		428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0E18282269003D19F0 /* CameraViewController.m */; };
+		428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F1118284D57003D19F0 /* ImageViewController.m */; };
 		42C8D5751827C28D002B732B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5741827C28D002B732B /* LoginViewController.m */; };
 		42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5771827C29D002B732B /* SingUpViewController.m */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,8 @@
 		428B9F0B1827F042003D19F0 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		428B9F0D18282269003D19F0 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		428B9F0E18282269003D19F0 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		428B9F1018284D57003D19F0 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		428B9F1118284D57003D19F0 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		42C8D5731827C28D002B732B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		42C8D5741827C28D002B732B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		42C8D5761827C29D002B732B /* SingUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingUpViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				42C8D5741827C28D002B732B /* LoginViewController.m */,
 				421B46391826FD750082B789 /* InboxViewController.h */,
 				421B463A1826FD750082B789 /* InboxViewController.m */,
+				428B9F1018284D57003D19F0 /* ImageViewController.h */,
+				428B9F1118284D57003D19F0 /* ImageViewController.m */,
 				421B461A1826C8D50082B789 /* Images.xcassets */,
 				421B460F1826C8D50082B789 /* Supporting Files */,
 			);
@@ -319,6 +324,7 @@
 				428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
 				42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */,
+				428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */,
 				428B9F091827E416003D19F0 /* EditFriendsViewController.m in Sources */,
 				421B463B1826FD750082B789 /* InboxViewController.m in Sources */,
 			);

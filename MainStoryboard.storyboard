@@ -128,6 +128,34 @@
             </objects>
             <point key="canvasLocation" x="1350" y="370"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="I1m-7F-vY1">
+            <objects>
+                <viewController id="xac-tL-ZfQ" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1SH-I8-WQx"/>
+                        <viewControllerLayoutGuide type="bottom" id="qQk-aO-46X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ExJ-jS-3xM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGT-5p-EgA">
+                                <rect key="frame" x="0.0" y="66" width="320" height="414"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iQ4-RR-wo3"/>
+                    <connections>
+                        <outlet property="imageView" destination="wGT-5p-EgA" id="pbT-Xv-0KK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYz-dv-SiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="-773"/>
+        </scene>
         <!--Inbox View Controller - Ribbit-->
         <scene sceneID="4Sv-Sd-w3s">
             <objects>
@@ -137,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Qly-L7-3PB">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Qly-L7-3PB">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qly-L7-3PB" id="oXz-dy-dLF">
@@ -160,6 +188,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="VoY-Go-nj8" kind="push" identifier="showLogin" id="sqk-yH-m5f"/>
+                        <segue destination="xac-tL-ZfQ" kind="push" identifier="showImage" id="O6c-D5-tcK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOu-21-NjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
