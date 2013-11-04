@@ -18,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.moviePlayer = [[MPMoviePlayerController alloc] init];
+    
     PFUser *currentUser = [PFUser currentUser];
     
     if (currentUser) {
@@ -90,7 +93,14 @@
     if ([fileType isEqualToString:@"image"]) {
         [self performSegueWithIdentifier:@"showImage" sender:self];
     } else {
+        PFFile *videoFile = [self.selectedMessage objectForKey:@"file"];
+        NSURL *fileUrl = [NSURL URLWithString:videoFile.url];
+        self.moviePlayer.contentURL = fileUrl;
+        [self.moviePlayer prepareToPlay];
         
+        // Add it to the viewController
+        [self.view addSubview:self.moviePlayer.view];
+        [self.moviePlayer setFullscreen:YES animated:YES];
     }
 }
 

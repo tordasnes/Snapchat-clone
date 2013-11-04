@@ -37,6 +37,7 @@
 		428B9F1218284D57003D19F0 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F1118284D57003D19F0 /* ImageViewController.m */; };
 		42C8D5751827C28D002B732B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5741827C28D002B732B /* LoginViewController.m */; };
 		42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5771827C29D002B732B /* SingUpViewController.m */; };
+		42E1254C1828571A00319FD0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E1254B1828571A00319FD0 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		42C8D5741827C28D002B732B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		42C8D5761827C29D002B732B /* SingUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingUpViewController.h; sourceTree = "<group>"; };
 		42C8D5771827C29D002B732B /* SingUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingUpViewController.m; sourceTree = "<group>"; };
+		42E1254B1828571A00319FD0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E1254C1828571A00319FD0 /* MediaPlayer.framework in Frameworks */,
 				421B4648182708C00082B789 /* CFNetwork.framework in Frameworks */,
 				421B4649182708C00082B789 /* CoreLocation.framework in Frameworks */,
 				421B464A182708C00082B789 /* libz.1.1.3.dylib in Frameworks */,
@@ -149,6 +152,7 @@
 		421B46071826C8D50082B789 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42E1254B1828571A00319FD0 /* MediaPlayer.framework */,
 				421B465218270AC90082B789 /* Parse.framework */,
 				421B4640182708C00082B789 /* CFNetwork.framework */,
 				421B4641182708C00082B789 /* CoreLocation.framework */,
