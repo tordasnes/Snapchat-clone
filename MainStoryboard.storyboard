@@ -8,7 +8,7 @@
         <scene sceneID="y1Q-kG-KqG">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="PQz-ol-X49" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wx8-qS-5jP">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="-186"/>
         </scene>
-        <!--View Controller - Ribbit-->
+        <!--Login View Controller - Ribbit-->
         <scene sceneID="IwQ-E7-OHL">
             <objects>
-                <viewController id="VoY-Go-nj8" sceneMemberID="viewController">
+                <viewController id="VoY-Go-nj8" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AMi-Kf-0ab"/>
                         <viewControllerLayoutGuide type="bottom" id="Au4-4L-WLe"/>
@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="1350" y="-186"/>
         </scene>
-        <!--View Controller - Ribbit-->
+        <!--Sing Up View Controller - Ribbit-->
         <scene sceneID="Z0j-we-RWJ">
             <objects>
-                <viewController id="yT8-Bd-m3D" sceneMemberID="viewController">
+                <viewController id="yT8-Bd-m3D" customClass="SingUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pOA-4d-AWV"/>
                         <viewControllerLayoutGuide type="bottom" id="KQb-ka-T3N"/>
@@ -192,6 +192,9 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="yT8-Bd-m3D" eventType="touchUpInside" id="4Er-8j-5AX"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-m6-D92">
                                 <rect key="frame" x="38" y="76" width="244" height="30"/>
@@ -215,6 +218,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ribbit" id="oKU-z2-T0g"/>
+                    <connections>
+                        <outlet property="emailField" destination="hnj-QG-0zD" id="3oQ-4R-NHW"/>
+                        <outlet property="passwordField" destination="6Eg-CU-309" id="RME-iV-LMg"/>
+                        <outlet property="usernameField" destination="Ebl-m6-D92" id="1N6-yx-V0I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20I-wz-ogy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

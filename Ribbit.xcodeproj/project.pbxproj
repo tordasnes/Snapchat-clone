@@ -31,6 +31,8 @@
 		421B464E182708C00082B789 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B4646182708C00082B789 /* StoreKit.framework */; };
 		421B464F182708C00082B789 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B4647182708C00082B789 /* SystemConfiguration.framework */; };
 		421B465318270AC90082B789 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B465218270AC90082B789 /* Parse.framework */; };
+		42C8D5751827C28D002B732B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5741827C28D002B732B /* LoginViewController.m */; };
+		42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C8D5771827C29D002B732B /* SingUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		421B4646182708C00082B789 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		421B4647182708C00082B789 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		421B465218270AC90082B789 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		42C8D5731827C28D002B732B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		42C8D5741827C28D002B732B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		42C8D5761827C29D002B732B /* SingUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingUpViewController.h; sourceTree = "<group>"; };
+		42C8D5771827C29D002B732B /* SingUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,10 @@
 				421B46171826C8D50082B789 /* AppDelegate.h */,
 				421B46181826C8D50082B789 /* AppDelegate.m */,
 				421B46371826C9070082B789 /* MainStoryboard.storyboard */,
+				42C8D5761827C29D002B732B /* SingUpViewController.h */,
+				42C8D5771827C29D002B732B /* SingUpViewController.m */,
+				42C8D5731827C28D002B732B /* LoginViewController.h */,
+				42C8D5741827C28D002B732B /* LoginViewController.m */,
 				421B46391826FD750082B789 /* InboxViewController.h */,
 				421B463A1826FD750082B789 /* InboxViewController.m */,
 				421B461A1826C8D50082B789 /* Images.xcassets */,
@@ -288,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C8D5751827C28D002B732B /* LoginViewController.m in Sources */,
 				421B46191826C8D50082B789 /* AppDelegate.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
+				42C8D5781827C29D002B732B /* SingUpViewController.m in Sources */,
 				421B463B1826FD750082B789 /* InboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +511,7 @@
 				421B46331826C8D50082B789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421B46341826C8D50082B789 /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +520,7 @@
 				421B46361826C8D50082B789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
