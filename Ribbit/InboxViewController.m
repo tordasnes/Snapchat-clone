@@ -102,6 +102,18 @@
         [self.view addSubview:self.moviePlayer.view];
         [self.moviePlayer setFullscreen:YES animated:YES];
     }
+
+    NSMutableArray *recipientsIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientsIds"]];
+    NSLog(@"Recipients: %@", recipientsIds);
+    
+    if (recipientsIds.count == 1) {
+        [self.selectedMessage deleteInBackground];
+    } else {
+        [recipientsIds removeObject:[[PFUser currentUser] objectId]];
+        [self.selectedMessage setObject:recipientsIds forKey:@"recipientsIds"];
+        [self.selectedMessage saveInBackground];
+    }
+
 }
 
 
