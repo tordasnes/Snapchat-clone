@@ -24,16 +24,16 @@
             </objects>
             <point key="canvasLocation" x="-53" y="55"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="OYo-ZA-eHu">
             <objects>
-                <tableViewController id="HDG-dC-GDk" sceneMemberID="viewController">
+                <tableViewController id="HDG-dC-GDk" customClass="CameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Wyh-Ek-6oP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eTE-pD-6qZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="eTE-pD-6qZ">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eTE-pD-6qZ" id="CAx-a2-iaC">
@@ -47,7 +47,18 @@
                             <outlet property="delegate" destination="HDG-dC-GDk" id="8w4-Ot-mF9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4fU-Fj-302"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="4fU-Fj-302">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="fec-Co-MsS">
+                            <connections>
+                                <action selector="cancel:" destination="HDG-dC-GDk" id="UbL-vX-ZpU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="IX7-2b-ebG">
+                            <connections>
+                                <action selector="send:" destination="HDG-dC-GDk" id="hOS-mg-CeF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mej-cG-Jb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
