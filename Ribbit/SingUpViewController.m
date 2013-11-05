@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 }
 
 
@@ -56,6 +57,12 @@
         }];
     }
 
+}
+
+- (IBAction)dismiss:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 @end
