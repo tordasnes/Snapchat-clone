@@ -18,6 +18,9 @@
     
     [Parse setApplicationId:@"hhQ7Zp9BbkFLhTiRop1JApYOrelvDsZbFklWIGaQ"
                   clientKey:@"iPSqpMe2JFR0P7uO8Iy9Q0Oqz6987Zmvb7elEXAl"];
+    
+    [self customizeUserInterface];
+    
     return YES;
 }
 
@@ -47,5 +50,15 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Helper methods
+
+- (void)customizeUserInterface
+{
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+}
+
 
 @end
