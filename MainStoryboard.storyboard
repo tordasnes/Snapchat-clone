@@ -211,7 +211,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-eE-wZD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-eE-wZD" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -239,8 +239,10 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="260" id="M6i-OS-GFt"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="Usz-XA-x0f"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="Xua-Iv-FL9"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="i8U-jt-LKV"/>
                                             <constraint firstAttribute="height" constant="44" id="jIW-j3-Evo"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="u9f-Vd-HwD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
@@ -250,7 +252,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="0pI-TF-gdz"/>
                                             <constraint firstAttribute="width" constant="260" id="8jG-55-ww6"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="XPq-yV-4KA"/>
                                             <constraint firstAttribute="height" constant="44" id="jJe-eg-fQE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -260,15 +264,21 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yoQ-v1-21u" secondAttribute="trailing" constant="30" id="2oQ-g8-zZq"/>
                                     <constraint firstItem="sQ6-Ly-MQ8" firstAttribute="leading" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="30" id="3ze-JJ-dTn"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="U3a-mL-fpa" secondAttribute="bottom" constant="4" id="5Ok-3h-xSl"/>
                                     <constraint firstItem="U3a-mL-fpa" firstAttribute="top" secondItem="yoQ-v1-21u" secondAttribute="bottom" constant="6" id="5Zh-rb-V5O"/>
                                     <constraint firstItem="sQ6-Ly-MQ8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="30" id="9VW-LW-hvR"/>
                                     <constraint firstAttribute="trailing" secondItem="sQ6-Ly-MQ8" secondAttribute="trailing" constant="30" id="JEW-r8-d2N"/>
+                                    <constraint firstItem="yoQ-v1-21u" firstAttribute="top" secondItem="sQ6-Ly-MQ8" secondAttribute="bottom" constant="1" id="Ogh-VP-7tN"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sQ6-Ly-MQ8" secondAttribute="trailing" constant="30" id="Rew-vY-kTp"/>
                                     <constraint firstAttribute="centerY" secondItem="yoQ-v1-21u" secondAttribute="centerY" id="Uiz-2c-ZMO"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yoQ-v1-21u" secondAttribute="trailing" constant="30" id="Vqh-GY-BWP"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="sQ6-Ly-MQ8" secondAttribute="trailing" constant="30" id="XGz-g7-PFm"/>
                                     <constraint firstAttribute="trailing" secondItem="U3a-mL-fpa" secondAttribute="trailing" constant="40" id="edf-JC-wDW"/>
+                                    <constraint firstAttribute="centerY" secondItem="yoQ-v1-21u" secondAttribute="centerY" id="jGD-nV-fNi"/>
+                                    <constraint firstItem="sQ6-Ly-MQ8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="30" id="jgb-0I-ZiE"/>
                                     <constraint firstItem="yoQ-v1-21u" firstAttribute="leading" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="30" id="kKf-0F-KEY"/>
-                                    <constraint firstItem="yoQ-v1-21u" firstAttribute="top" secondItem="sQ6-Ly-MQ8" secondAttribute="bottom" id="oGz-Wp-D0x"/>
-                                    <constraint firstItem="yoQ-v1-21u" firstAttribute="top" secondItem="sQ6-Ly-MQ8" secondAttribute="bottom" constant="1" id="umm-WI-r0E"/>
+                                    <constraint firstAttribute="bottom" secondItem="U3a-mL-fpa" secondAttribute="bottom" priority="1" constant="4" id="v0U-WF-1FO"/>
+                                    <constraint firstItem="yoQ-v1-21u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="30" id="wsM-FD-ytK"/>
                                     <constraint firstItem="U3a-mL-fpa" firstAttribute="leading" secondItem="3q4-eE-wZD" secondAttribute="leading" constant="40" id="xZ2-zs-OOp"/>
                                 </constraints>
                             </scrollView>
@@ -345,7 +355,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBQ-MO-cG0">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBQ-MO-cG0" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -409,9 +419,11 @@
                                     <constraint firstAttribute="trailing" secondItem="hnj-QG-0zD" secondAttribute="trailing" constant="30" id="EKJ-zf-brQ"/>
                                     <constraint firstItem="j4o-sm-xAT" firstAttribute="top" secondItem="hnj-QG-0zD" secondAttribute="bottom" constant="6" id="LrF-Pa-vtr"/>
                                     <constraint firstAttribute="trailing" secondItem="6Eg-CU-309" secondAttribute="trailing" constant="30" id="RSC-X9-s9M"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j4o-sm-xAT" secondAttribute="bottom" constant="4" id="Vfr-Fb-VK1"/>
                                     <constraint firstAttribute="trailing" secondItem="Ebl-m6-D92" secondAttribute="trailing" constant="30" id="Za1-sd-LwZ"/>
                                     <constraint firstAttribute="centerY" secondItem="6Eg-CU-309" secondAttribute="centerY" id="avQ-bl-v3w"/>
                                     <constraint firstItem="Ebl-m6-D92" firstAttribute="leading" secondItem="pBQ-MO-cG0" secondAttribute="leading" constant="30" id="dv5-OR-v61"/>
+                                    <constraint firstAttribute="bottom" secondItem="j4o-sm-xAT" secondAttribute="bottom" priority="1" constant="4" id="lxt-iO-ZJl"/>
                                     <constraint firstItem="6Eg-CU-309" firstAttribute="top" secondItem="Ebl-m6-D92" secondAttribute="bottom" constant="1" id="nIY-Ui-oFo"/>
                                 </constraints>
                             </scrollView>
