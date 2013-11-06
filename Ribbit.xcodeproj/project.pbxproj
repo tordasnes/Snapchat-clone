@@ -31,6 +31,8 @@
 		421B464E182708C00082B789 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B4646182708C00082B789 /* StoreKit.framework */; };
 		421B464F182708C00082B789 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B4647182708C00082B789 /* SystemConfiguration.framework */; };
 		421B465318270AC90082B789 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B465218270AC90082B789 /* Parse.framework */; };
+		42497B47182A9C1000A33513 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42497B44182A9C1000A33513 /* MSCellAccessory.m */; };
+		42497B48182A9C1000A33513 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42497B46182A9C1000A33513 /* UIView+AccessViewController.m */; };
 		428B9F091827E416003D19F0 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F081827E416003D19F0 /* EditFriendsViewController.m */; };
 		428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0B1827F042003D19F0 /* FriendsViewController.m */; };
 		428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0E18282269003D19F0 /* CameraViewController.m */; };
@@ -82,6 +84,10 @@
 		421B4646182708C00082B789 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		421B4647182708C00082B789 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		421B465218270AC90082B789 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		42497B43182A9C1000A33513 /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		42497B44182A9C1000A33513 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		42497B45182A9C1000A33513 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		42497B46182A9C1000A33513 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
 		428B9F071827E416003D19F0 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
 		428B9F081827E416003D19F0 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
 		428B9F0A1827F042003D19F0 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 				42E1254E182933C200319FD0 /* TPKeyboardAvoidingScrollView.m */,
 				42E125501829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				42E125511829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				42497B42182A9C1000A33513 /* MSCellAccessory */,
 				421B461A1826C8D50082B789 /* Images.xcassets */,
 				421B460F1826C8D50082B789 /* Supporting Files */,
 			);
@@ -234,6 +241,17 @@
 				421B462A1826C8D50082B789 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42497B42182A9C1000A33513 /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				42497B43182A9C1000A33513 /* MSCellAccessory.h */,
+				42497B44182A9C1000A33513 /* MSCellAccessory.m */,
+				42497B45182A9C1000A33513 /* UIView+AccessViewController.h */,
+				42497B46182A9C1000A33513 /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +352,10 @@
 			files = (
 				42C8D5751827C28D002B732B /* LoginViewController.m in Sources */,
 				42E1254F182933C200319FD0 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				42497B48182A9C1000A33513 /* UIView+AccessViewController.m in Sources */,
 				428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */,
 				421B46191826C8D50082B789 /* AppDelegate.m in Sources */,
+				42497B47182A9C1000A33513 /* MSCellAccessory.m in Sources */,
 				428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */,
 				42E125521829347900319FD0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				421B46151826C8D50082B789 /* main.m in Sources */,
