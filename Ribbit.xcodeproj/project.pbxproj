@@ -33,6 +33,7 @@
 		421B465318270AC90082B789 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B465218270AC90082B789 /* Parse.framework */; };
 		42497B47182A9C1000A33513 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42497B44182A9C1000A33513 /* MSCellAccessory.m */; };
 		42497B48182A9C1000A33513 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42497B46182A9C1000A33513 /* UIView+AccessViewController.m */; };
+		42497B4B182AA62F00A33513 /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42497B4A182AA62F00A33513 /* GravatarUrlBuilder.m */; };
 		428B9F091827E416003D19F0 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F081827E416003D19F0 /* EditFriendsViewController.m */; };
 		428B9F0C1827F042003D19F0 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0B1827F042003D19F0 /* FriendsViewController.m */; };
 		428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B9F0E18282269003D19F0 /* CameraViewController.m */; };
@@ -88,6 +89,8 @@
 		42497B44182A9C1000A33513 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
 		42497B45182A9C1000A33513 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
 		42497B46182A9C1000A33513 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		42497B49182AA62F00A33513 /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
+		42497B4A182AA62F00A33513 /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
 		428B9F071827E416003D19F0 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
 		428B9F081827E416003D19F0 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
 		428B9F0A1827F042003D19F0 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				421B46171826C8D50082B789 /* AppDelegate.h */,
 				421B46181826C8D50082B789 /* AppDelegate.m */,
 				421B46371826C9070082B789 /* MainStoryboard.storyboard */,
+				42497B49182AA62F00A33513 /* GravatarUrlBuilder.h */,
+				42497B4A182AA62F00A33513 /* GravatarUrlBuilder.m */,
 				428B9F0A1827F042003D19F0 /* FriendsViewController.h */,
 				428B9F0B1827F042003D19F0 /* FriendsViewController.m */,
 				428B9F071827E416003D19F0 /* EditFriendsViewController.h */,
@@ -351,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C8D5751827C28D002B732B /* LoginViewController.m in Sources */,
+				42497B4B182AA62F00A33513 /* GravatarUrlBuilder.m in Sources */,
 				42E1254F182933C200319FD0 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				42497B48182A9C1000A33513 /* UIView+AccessViewController.m in Sources */,
 				428B9F0F18282269003D19F0 /* CameraViewController.m in Sources */,
